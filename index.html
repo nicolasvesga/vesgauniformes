@@ -60,10 +60,25 @@
 				<div class="container">
 
 				<!-- Top menu buttons -->
-					<div class="menu-buttons">
-						<ul>
-							<li><a href="https://wa.me/573178842073" target="_blank" class="button button-full" title="Whatsapp">Whatsapp</a></li>
-						</ul>
+                    
+                    <div class="menu-buttons">
+					
+                        <!--Este es su botón de Pago Abierto ePayco-->
+                     
+                        <form id="frm_ePaycoCheckoutOpen" name="frm_ePaycoCheckoutOpen" method="POST" action="https://secure.payco.co/checkoutopen.php">
+    
+                            <input name="p_cust_id_cliente" type="hidden" value="62497"/>
+                            <input name="p_key" type="hidden" value="5770d50b681d391c632d4e3f2c235b6f2fcb3f94"/>
+                            <input name="p_id_factura" type="hidden" value=""/>
+                            <input name="p_description" type="hidden" value="Pedidos"/>
+                            <input name="p_test_request" type="hidden" value="false"/>
+                            <input name="p_url_respuesta" type="hidden" value=""/>
+                            <input name="p_url_confirmacion" type="hidden" value="http://vesgauniformes.com/"/>
+                            <input type="image" id="imagen" src="https://369969691f476073508a-60bf0867add971908d4f26a64519c2aa.ssl.cf5.rackcdn.com/btns/btn4.png" alt=""/>
+                            <input type="hidden" id="idboton" name="idboton" value="17787"/>
+                        
+                        </form>
+                        
 					</div>
 
 					<!-- Brand and toggle get grouped for better mobile display -->
@@ -108,10 +123,10 @@
 							</div>
 
 							<ul class="header-nav-buttons">
+                                
 								<li><a href="assets/pdf/catalogo_vesga_uniformes.pdf" target="_blank" class="button button-white-border" title="Catálogo">Ver catálogo</a></li>
-                                
-<!--                                <li><a href="#" class="button button-white" title="Epayco">Paga tus productos</a></li>-->
-                                
+                                <li><a href="https://wa.me/573178842073" target="_blank" class="button button-white" title="Whatsapp">Whatsapp</a></li>
+                                                                
 							</ul>
 
 						</div> <!-- .header-text -->
