@@ -100,6 +100,7 @@ i {
 img {
   max-width: 100%;
   height: auto;
+    z-index: 2;
 }
 
 input[type="text"]:focus {
@@ -1386,7 +1387,7 @@ a {
   height: 10.5rem;
   bottom: 0;
   overflow: hidden;
-  z-index: 1;
+  z-index: 2;
   border-bottom: 24px solid #fff;
 }
 
@@ -1466,7 +1467,7 @@ a {
   height: 100vh;
   float: left;
   padding: 0;
-  z-index: 0;
+  z-index: 2;
 }
 
 .site-header .header-white-block {
@@ -3969,4 +3970,42 @@ html {
     background-position: left;
 /*  background-position: center;*/
   background-repeat: no-repeat;
+}
+
+.cookie-text {
+  margin: 15px 0;
+  line-height: 2;
+}
+
+.cookie-container {
+  z-index: 1;
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: #2f3640;
+  color: #f5f6fa;
+  padding: 0 25px;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+
+  transition: 400ms;
+}
+
+.cookie-container.active {
+  bottom: 0;
+}
+
+.cookie-container a {
+  color: #f5f6fa;
+}
+
+.cookie-btn {
+  background: #e84118;
+  border: 0;
+  color: #f5f6fa;
+  padding: 10px 40px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
 }
